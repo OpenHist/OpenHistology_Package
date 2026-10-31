@@ -1,0 +1,16 @@
+{
+  "slide_id": "synthetic-slide",
+  "inputs": [
+    {"path": "../../../../patches/synthetic-slide-20x.h5", "source_id": "grid-20x"},
+    {"path": "../../../../patches/synthetic-slide-10x.h5", "source_id": "grid-10x"}
+  ],
+  "output": "../../../../features/synthetic-slide.h5ad",
+  "models": ["phikon", "phikon_v2"],
+  "config": {
+    "batch_size": 32,
+    "device": "auto",
+    "precision": "auto",
+    "compression_level": 4
+  },
+  "auth": {"hf_token_env": "HF_TOKEN", "prompt_credentials": false}
+}

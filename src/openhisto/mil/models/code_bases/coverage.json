@@ -1,0 +1,192 @@
+{
+  "verified_at_utc": "2026-10-29T01:55:01.721933+00:00",
+  "python": "3.12.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "implementation_sha256": "6b8f1de4834816d128b492be427c3d322dc78bc56945913cabade1fd0758d2fe",
+  "tests_passed": 50,
+  "dependencies": {
+    "torch": "2.6.0",
+    "torchvision": "0.21.0",
+    "numpy": "2.2.6",
+    "torch-geometric": "2.6.1",
+    "timm": "1.0.12",
+    "einops": "0.8.2",
+    "nystrom-attention": "0.0.14"
+  },
+  "synthetic_only": true,
+  "checkpoints_downloaded": false,
+  "datasets_downloaded": false,
+  "gpu_parity_tested": false,
+  "models": {
+    "abmil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "eb0434ba2795711a45d693d60120ae53532b1b93",
+      "input_kind": "feature_bag"
+    },
+    "gated_abmil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "eb0434ba2795711a45d693d60120ae53532b1b93",
+      "input_kind": "feature_bag"
+    },
+    "dsmil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "80465ed534ac49b5e550833da56c27936f0b9440",
+      "input_kind": "feature_bag"
+    },
+    "dtfd_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "10964f4dcc27c65ce110a0e9a3b9240bff58da8a",
+      "input_kind": "feature_bag"
+    },
+    "acmil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "e53d19c81f3892256d41962ffc4352cc91a4f834",
+      "input_kind": "feature_bag"
+    },
+    "asmil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "5d062271e1626b27a955c309d10add902311865c",
+      "input_kind": "feature_bag"
+    },
+    "clam_sb": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "53e2409d4a8189c682c173382964a85f114f923c",
+      "input_kind": "feature_bag"
+    },
+    "clam_mb": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "53e2409d4a8189c682c173382964a85f114f923c",
+      "input_kind": "feature_bag"
+    },
+    "varpool": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "2e40ab4d9a129e430fdb7dcf3304f55388f2ad88",
+      "input_kind": "feature_bag"
+    },
+    "panther": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "e7ffae402e146363fe1ca3813ffe68d248ec570f",
+      "input_kind": "feature_bag"
+    },
+    "wikg": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "eb3144fb8267f525c57e71ced5c5b2b6a1c42a93",
+      "input_kind": "feature_bag"
+    },
+    "tad_graph": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "696f2196adc38edfd18468869f7a5a5b0a0d3abb",
+      "input_kind": "prepared_graph"
+    },
+    "resgat": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "65e2833c6207b7d13de2baf649a6eeece63ce71c",
+      "input_kind": "prepared_graph"
+    },
+    "patch_gcn": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "823addaee5b8f4cc2bec3ea8e5e0077b2a5115a4",
+      "input_kind": "prepared_graph"
+    },
+    "slidegraph_plus": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "23fbf58371a86525ea2daf0eb0232b379b1b8831",
+      "input_kind": "prepared_graph"
+    },
+    "cs_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "d51b97f411caeff092e397427003021d1b23f00f",
+      "input_kind": "prepared_hierarchy"
+    },
+    "zoommil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "da7bb7fa71629d34e9b04859c1db791ac8330f5d",
+      "input_kind": "prepared_hierarchy"
+    },
+    "hag_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "9fec1ca4390346b958212801d2d5a14c7ce36d6f",
+      "input_kind": "prepared_hierarchy"
+    },
+    "gfr_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "25c9b1e24a8544619b5d4405c9fa70eba9c5cd0f",
+      "input_kind": "prepared_hierarchy"
+    },
+    "h2_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "ea472fefd5eab553c58041a5acc203ac7d467d06",
+      "input_kind": "prepared_graph"
+    },
+    "hipt": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "780fafaed2e5b112bc1ed6e78852af1fe6714342",
+      "input_kind": "prepared_hierarchy"
+    },
+    "transmil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "9d6aee57c7c72375fb9132dc58cd8c9b0f0a949c",
+      "input_kind": "feature_bag"
+    },
+    "ilra": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "bb45b9ba9d4a7096d473f9ee171a6252eb736570",
+      "input_kind": "feature_bag"
+    },
+    "rrt_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "3320b6616b2c3d96ddc5bcd1aecea865a064987f",
+      "input_kind": "feature_bag"
+    },
+    "dgr_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "ac6257ffa768f154c52ac8b01e2086e5d3a714bf",
+      "input_kind": "feature_bag"
+    },
+    "caprmil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "b1f21a25e21d889a90bd604d29887abb3c1dbeeb",
+      "input_kind": "feature_bag"
+    },
+    "lin_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "82a00672cfebd7a6cedbd5384b47700a4db5da27",
+      "input_kind": "feature_bag"
+    },
+    "mamba_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "9aea39efc13fdcd3703b5b54c28a64887b4acbd7",
+      "input_kind": "feature_bag"
+    },
+    "nnmil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "e92e8a0cf72dc1beb2a5915e27ca128af45fcb40",
+      "input_kind": "feature_bag"
+    },
+    "mhim_v1": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "5377eb6014bbd24eda1185628b864e8ef3622a08",
+      "input_kind": "feature_bag"
+    },
+    "mhim_v2": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": "9d0c91abeb1b39f91c161b47cf14bc44f5a89da3",
+      "input_kind": "feature_bag"
+    },
+    "mean_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": null,
+      "input_kind": "feature_bag"
+    },
+    "max_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": null,
+      "input_kind": "feature_bag"
+    },
+    "mean_std_mil": {
+      "status": "cpu_forward_backward_state_roundtrip_passed",
+      "source_commit": null,
+      "input_kind": "feature_bag"
+    }
+  }
+}

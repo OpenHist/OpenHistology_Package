@@ -1,0 +1,26 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# macOS metadata
+.DS_Store
+
+# Build and environment outputs
+build/
+dist/
+*.egg-info/
+.venv/
+.venv-*/
+*.sif
+
+# Local credentials and generated research artifacts
+.env
+.env.*
+!.env.example
+/data/
+/outputs/
+/runs/
+/checkpoints/
+/artifacts/

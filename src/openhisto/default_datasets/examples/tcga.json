@@ -1,0 +1,5 @@
+{
+  "projects": ["TCGA-KIRC"],
+  "diagnostic_only": true,
+  "limit": 5
+}

@@ -1,0 +1,15 @@
+{
+  "repository": "histocartography/zoommil",
+  "url": "https://github.com/histocartography/zoommil",
+  "branch": "main",
+  "commit": "da7bb7fa71629d34e9b04859c1db791ac8330f5d",
+  "checkout": "upstream/zoommil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "LICENSE"
+  ],
+  "source_files": 17,
+  "retrieved_at_utc": "2026-10-27T06:43:08.706369+00:00"
+}

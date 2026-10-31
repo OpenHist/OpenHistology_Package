@@ -1,0 +1,30 @@
+{
+  "xgboost": {
+    "version": "3.4.1",
+    "build_info": {
+      "BUILTIN_PREFETCH_PRESENT": true,
+      "CLANG_VERSION": [
+        21,
+        0,
+        0
+      ],
+      "DEBUG": false,
+      "MM_PREFETCH_PRESENT": false,
+      "USE_CUDA": false,
+      "USE_DLOPEN_NCCL": false,
+      "USE_FEDERATED": false,
+      "USE_NCCL": false,
+      "USE_OPENMP": false,
+      "USE_RMM": false,
+      "libxgboost": "<environment>/lib/python3.12/site-packages/xgboost/lib/libxgboost.dylib"
+    }
+  },
+  "lightgbm": {
+    "version": "4.7.0",
+    "openmp_runtime_linked": false,
+    "source_build_flags": {
+      "USE_OPENMP": false
+    }
+  },
+  "system_libraries_modified": false
+}

@@ -1,0 +1,10 @@
+{
+  "slides_dir": "WSIs",
+  "sheet": "WSI_Information",
+  "column_mapping": {
+    "slide_id": "WSI",
+    "label": "WSI label",
+    "subject_id": "Patient ID",
+    "split": "Set"
+  }
+}

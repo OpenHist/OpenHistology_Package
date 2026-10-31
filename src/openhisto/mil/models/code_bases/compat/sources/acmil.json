@@ -1,0 +1,15 @@
+{
+  "repository": "dazhangyu123/ACMIL",
+  "url": "https://github.com/dazhangyu123/ACMIL",
+  "branch": "main",
+  "commit": "e53d19c81f3892256d41962ffc4352cc91a4f834",
+  "checkout": "upstream/acmil",
+  "retrieved_at_utc": "2026-10-27T06:45:42.774488+00:00",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "LICENSE"
+  ],
+  "source_files": 85
+}

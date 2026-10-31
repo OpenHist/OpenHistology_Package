@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "scope": "Eleven native graph/multiscale model profiles; caller-prepared inputs; no shared trainer or automatic graph/multiscale preparation",
+  "source_policy": "Pinned working trees in upstream remain unmodified. Exact replacements fail if the pinned source text changes. Commit and license provenance lives in compat/sources/<repository>.json.",
+  "validation": "Synthetic CPU train forward, finite nonzero parameter gradients, strict adapter state_dict reload, and native eval forward for every profile. Additional native checkpoint, H2 hierarchy/width, HIPT variant and GFR survival checks. No real slides, pretrained weights, external inference or paper-performance reproduction.",
+  "profiles": {
+    "wikg": {
+      "repository": "wikg",
+      "entry_point": "model.py:WiKG",
+      "inputs": "One feature bag [N,D]; N must be at least topk",
+      "repairs": ["Remove import-time global anomaly-detection mutation"],
+      "preserved": "Native dynamic top-k knowledge graph, configured aggregation/readout and classifier"
+    },
+    "tad_graph": {
+      "repository": "tad_graph",
+      "entry_point": "src/tadgraph/models/tad_graph_module.py:TADGraphModule",
+      "inputs": "One prepared PyG graph with x, COO edge_index and normalized distance/angle edge_attr [E,2] in [0,1]",
+      "repairs": [
+        "Forward-only nn.Module base replaces its training-framework base, preserving hparams/current_epoch/logged metrics without defining a trainer",
+        "Private COO adjacency representation and equivalent Torch/PyG scatter and transpose operations avoid optional compiled sparse extensions",
+        "Keep COO edge descriptors aligned across native self-loop insertion and transpose",
+        "Bind public MessagePassing dispatcher for the native custom edge_atten argument on current PyG",
+        "Clone weighted graph inputs before causal/trivial evaluation to prevent native in-place feature corruption",
+        "Wire requested attention_head_num consistently into native convolution heads/widths and honor eval mode in functional dropout",
+        "When learn_edge_att is selected, apply edge scores to edges without also multiplying them into node rows",
+        "Construct edge embeddings on the feature device; remove optional debugger and dataset-path imports"
+      ],
+      "preserved": "Native DenseGNN/GATv2 modules, causal extractor, stochastic attention sampler, causal and trivial forward paths and information loss",
+      "outputs": "Classification: causal logits/class probabilities, trivial logits and differentiable info_loss. Survival task: sigmoid hazards, cumulative survival, risk=-sum(survival), trivial logits/hazards in aux and probabilities=None. Original native tuple retained."
+    },
+    "resgat": {
+      "repository": "resgat",
+      "entry_point": "models/resgat.py:ResGATs",
+      "inputs": "One prepared PyG graph with x and COO edge_index",
+      "repairs": [],
+      "preserved": "All three native residual GATv2/GraphNorm blocks, mean pooling and classifier; no DGL replacement required"
+    },
+    "patch_gcn": {
+      "repository": "patch_gcn",
+      "entry_point": "models/model_graph_mil.py:PatchGCN_Surv",
+      "inputs": "One prepared PyG graph; edge_agg chooses edge_index or caller-supplied edge_latent",
+      "repairs": [
+        "Use requested num_features/hidden_dim for the native initial projection instead of hardcoded 1024/128 or 256",
+        "Size concatenated projections, attention and classifier by hidden_dim*num_layers instead of hardcoded four stages",
+        "Replace CUDA FloatTensor conversion in the optional edge-normalization helper with device-preserving float()"
+      ],
+      "preserved": "Native GENConv/DeepGCN layers, concatenated stages, gated attention and discrete survival output",
+      "outputs": "Exact pre-sigmoid classifier logits captured by a temporary hook; native hazards and survival in aux; hazards are not softmax class probabilities"
+    },
+    "slidegraph_plus": {
+      "repository": "slidegraph",
+      "entry_point": "GNN_pr.py:GNN",
+      "inputs": "One caller-prepared clustered graph with x and COO edge_index",
+      "repairs": ["Omit unused plotting import from native utility module"],
+      "preserved": "Released train.py EdgeConv/aggr=max/mean-pooling configuration is the profile default and primary CPU acceptance case. Explicit GINConv remains available. Native per-layer graph-score aggregation, node scores and node embeddings retained; no automatic clustering"
+    },
+    "cs_mil": {
+      "repository": "cs_mil",
+      "entry_point": "CS-MIL_Docker/src/DeepAttnMISL_CS_MIL.py:DeepAttnMIL_Surv",
+      "inputs": "cluster_num tensors [P_i,D,3,1], three explicitly paired scales per patch; optional binary mask [1,sum(P_i)] with at least one active patch",
+      "repairs": [
+        "Use model parameter device/dtype instead of unconditional CUDA conversion",
+        "Expose input channel width and sigmoid-head count while retaining native defaults 2048 and one",
+        "Exponentiate masked logits and clamp normalization denominator for stable native masked softmax"
+      ],
+      "preserved": "Shared native convolutional patch encoder, resolution-attention fusion, bag attention and sigmoid classifier",
+      "outputs": "Native sigmoid values retained; exact pre-sigmoid logits captured; multiple explicitly requested heads remain independent sigmoids"
+    },
+    "zoommil": {
+      "repository": "zoommil",
+      "entry_point": "zoommil/models/zoommil.py:ZoomMIL",
+      "inputs": "Three native parent-major feature levels, with integer child ratios; no inferred cross-scale mappings",
+      "repairs": [
+        "Create Kronecker identity tensors on input device/dtype instead of CUDA-detecting stored device",
+        "Correct native PerturbedTopKFunction backward return arity from six to four entries, matching apply(x,k,num_samples,sigma)"
+      ],
+      "preserved": "All three native attention streams, train-time perturbation-gradient estimator, eval hard selection, summed multiscale bag embedding and classifier"
+    },
+    "hag_mil": {
+      "repository": "hag_mil",
+      "entry_point": "models/model.py:IATModel plus main.py three-stage selection cascade",
+      "inputs": "Three parent-major feature levels with exactly four contiguous children per parent",
+      "repairs": [
+        "Extract the existing three-scale forward/selection orchestration without importing the training script",
+        "Pass model constructor arguments by their actual keyword signature instead of the script's configuration dictionary positional mismatch",
+        "Use reshape(-1) for attention ordering so singleton selections remain index vectors"
+      ],
+      "preserved": "Three independent native IATModel networks, their Nyström/Admin blocks, attention-based four-child zoom selection and optional native instance losses",
+      "outputs": "Finest-stage standard output; all native stage tuples and selected indices retained in aux. Hard selection does not backpropagate through indices; stage objectives remain caller-owned."
+    },
+    "gfr_mil": {
+      "repository": "gfr_mil",
+      "entry_point": "src/gfr_mil/models.py:build_model/build_survival_model",
+      "inputs": "features/coords, high_features/high_coords, and one explicit long region_labels parent index per high feature",
+      "repairs": [],
+      "preserved": "Existing exact native adapter, stochastic training selection/recycling, rotary region transformer, fine class attention and auxiliary attention loss; upstream already provides its CPU attention fallback",
+      "constraints": "Native coordinate quantization remains high //448 and low //3584. Native depth/selection behavior is retained.",
+      "outputs": "Classification or survival task selectable; capture exact classifier logits because upstream survival adapter labels hazards as logits; native output dictionary retained"
+    },
+    "h2_mil": {
+      "repository": "h2_mil",
+      "entry_point": "code/main.py:GCN with code/RAConv.py and code/IHPool.py",
+      "inputs": "One root/coarse/fine ordered PyG hierarchy: x, edge_index_tree_8nb, node_type 0/1/2, node_tree parents, normalized x_y_index; every coarse parent has fine children",
+      "repairs": [
+        "Remove import-time CUDA visibility mutation",
+        "Omit unused plotting import from training entry module",
+        "Use separate width-correct native PyG LayerNorm modules at input, convolution and halved classifier stages",
+        "Replace optional extension reductions with equivalent PyG/Torch scatter and remove unused sparse/private imports",
+        "Derive temporary tensor device from input features in RAConv and IHPool",
+        "Bind current PyG MessagePassing dispatcher for native custom message parameters",
+        "Make final class count explicit while retaining default four; convert softmax segment size to a Python integer"
+      ],
+      "preserved": "Both native resolution-aware convolutions, both spatial/fitness IHPool stages, pooled cluster/type/tree/score/coordinate/edge tuples and final softmax",
+      "checkpoint_policy": "Requested native checkpoint loading is strict. Historical norm keys/shapes require explicit user migration; no silent strict=False loading.",
+      "limits": "One graph per call; native pooling still builds dense adjacency and uses discrete hierarchy selection. CPU compatibility does not remove native quadratic memory cost."
+    },
+    "hipt": {
+      "repository": "hipt",
+      "entry_point": "2-Weakly-Supervised-Subtyping/models/model_hierarchical_mil.py:HIPT_LGP_FC/HIPT_GP_FC/HIPT_None_FC",
+      "inputs": "LGP: raster-ordered [regions,256,384] patch embeddings; GP: [regions,192] region embeddings; None: grouped [regions,patches,D]",
+      "repairs": [
+        "Remove cwd-relative sys.path mutation and unconditional GP debugger",
+        "Remove only the native constructor's patch-count print",
+        "Construct native modules on CPU without calling CUDA-detecting relocate()",
+        "Load explicit local teacher/full/global checkpoints strictly and fail for missing or incompatible files",
+        "Replace undefined pretrain_WSI/global_vit branch with an explicit checkpoint for the existing native global_phi/global_transformer/global_attn_pool/global_rho pipeline",
+        "Honor local/global freeze options",
+        "For GP/LGP retain their actual 192-wide native global architecture even when historical big is requested; record requested_size and effective_global_width explicitly"
+      ],
+      "preserved": "Native local region transformer, native global transformer/attention hierarchy, and separate no-transformer ablation; original five-element prediction tuples retained",
+      "weight_policy": "Random initialization is explicit metadata when no checkpoint is supplied. No pretrained model download. The standalone raw-image HIPT_4K extraction utility is outside this feature-input MIL profile."
+    }
+  }
+}

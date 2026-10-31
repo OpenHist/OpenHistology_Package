@@ -1,0 +1,15 @@
+{
+  "repository": "DearCaat/MHIM-MIL",
+  "url": "https://github.com/DearCaat/MHIM-MIL",
+  "branch": "master",
+  "commit": "9d0c91abeb1b39f91c161b47cf14bc44f5a89da3",
+  "checkout": "upstream/mhim_mil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "CLAM/LICENSE.md"
+  ],
+  "source_files": 112,
+  "retrieved_at_utc": "2026-10-27T06:43:18.215172+00:00"
+}

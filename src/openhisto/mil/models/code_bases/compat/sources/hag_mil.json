@@ -1,0 +1,13 @@
+{
+  "repository": "BearCleverProud/HAG-MIL",
+  "url": "https://github.com/BearCleverProud/HAG-MIL",
+  "branch": "master",
+  "commit": "9fec1ca4390346b958212801d2d5a14c7ce36d6f",
+  "checkout": "upstream/hag_mil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 15,
+  "retrieved_at_utc": "2026-10-27T06:43:09.487468+00:00"
+}

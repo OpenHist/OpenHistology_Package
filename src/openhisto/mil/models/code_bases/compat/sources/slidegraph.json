@@ -1,0 +1,15 @@
+{
+  "repository": "wenqi006/SlideGraph",
+  "url": "https://github.com/wenqi006/SlideGraph",
+  "branch": "main",
+  "commit": "23fbf58371a86525ea2daf0eb0232b379b1b8831",
+  "checkout": "upstream/slidegraph",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "source_files": 8,
+  "retrieved_at_utc": "2026-10-27T06:43:07.412316+00:00"
+}

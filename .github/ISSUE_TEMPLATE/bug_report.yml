@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible problem with an OpenHisto API or command.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve OpenHisto. Use a small synthetic example when possible.
+        Remove credentials, patient identifiers, clinical records and private paths from logs.
+        Please do not attach slide datasets or model weights.
+  - type: input
+    id: component
+    attributes:
+      label: Module and operation
+      placeholder: "For example: patch_extraction.extract_grid, or feature_encoder encode"
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+      description: Explain what you expected and what happened, including the exception when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include the command or Python example, input shapes/dtypes and relevant configuration. Prefer generated data.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OpenHisto version/commit, Python, OS, installed extras and relevant dependency versions. For model failures, include the profile/checkpoint revision and requested device.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs or additional context
+      description: Include the relevant traceback and any prior compatible output/recovery behavior. Never include tokens or patient information.

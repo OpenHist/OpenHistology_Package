@@ -1,0 +1,8 @@
+# Separate source installation: direct URLs cannot be uploaded in PyPI metadata.
+# The training API is internal, so retain the tested official source revision.
+# Use the adapter's training dependencies, not the full upstream development
+# extra (which adds another OpenCV distribution and can upgrade Torch).
+torch>=2.6,<2.7
+torchvision>=0.21,<0.22
+tensordict>=0.6.2,<0.7
+SAM-2 @ git+https://github.com/facebookresearch/sam2.git@2b90b9f5ceec907a1c18123530e92e794ad901a4

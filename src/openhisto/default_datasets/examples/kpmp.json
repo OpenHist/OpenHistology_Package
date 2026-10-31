@@ -1,0 +1,4 @@
+{
+  "repository_csv": "/path/to/atlas-export.csv",
+  "include_clinical": true
+}

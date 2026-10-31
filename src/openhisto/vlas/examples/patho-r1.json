@@ -1,0 +1,8 @@
+{
+  "slide_id": "synthetic-slide",
+  "inputs": [{"path": "../../../../patches/synthetic-slide-20x.h5", "source_id": "grid-20x"}],
+  "output": "../../../../descriptions/synthetic-slide",
+  "models": [{"model": "patho_r1_7b", "python_executable": "../../../../.venv-patho-r1/bin/python"}],
+  "prompt": "Describe the visible tissue architecture, cell morphology, nuclei, stroma, and inflammatory features in this patch. Use concise descriptive prose and state uncertainty when a feature is unclear.",
+  "config": {"device": "cuda", "precision": "auto", "batch_size": 1, "max_new_tokens": 2048, "do_sample": false}
+}

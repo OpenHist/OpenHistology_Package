@@ -1,0 +1,15 @@
+{
+  "repository": "binli123/dsmil-wsi",
+  "url": "https://github.com/binli123/dsmil-wsi",
+  "branch": "master",
+  "commit": "80465ed534ac49b5e550833da56c27936f0b9440",
+  "checkout": "upstream/dsmil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "LICENSE"
+  ],
+  "source_files": 22,
+  "retrieved_at_utc": "2026-10-27T06:43:04.969998+00:00"
+}

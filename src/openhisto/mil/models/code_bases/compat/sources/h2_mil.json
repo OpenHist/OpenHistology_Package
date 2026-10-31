@@ -1,0 +1,13 @@
+{
+  "repository": "lin-lcx/H2-MIL",
+  "url": "https://github.com/lin-lcx/H2-MIL",
+  "branch": "main",
+  "commit": "ea472fefd5eab553c58041a5acc203ac7d467d06",
+  "checkout": "upstream/h2_mil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 4,
+  "retrieved_at_utc": "2026-10-27T06:43:10.062379+00:00"
+}

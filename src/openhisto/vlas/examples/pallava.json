@@ -1,0 +1,17 @@
+{
+  "slide_id": "synthetic-slide",
+  "inputs": [{"path": "../../../../patches/synthetic-slide-20x.h5", "source_id": "grid-20x"}],
+  "output": "../../../../descriptions/synthetic-slide",
+  "models": [{
+    "model": "pa_llava",
+    "checkpoint": "../../../../checkpoints/pa-stage2-prepared",
+    "python_executable": "../../../../.venv-pallava/bin/python",
+    "options": {
+      "upstream_path": "../../../../vendor/PA-LLaVA",
+      "base_checkpoint": "../../../../checkpoints/Meta-Llama-3-8B-Instruct",
+      "vision_checkpoint": "../../../../checkpoints/plip"
+    }
+  }],
+  "prompt": "Describe the visible microscopic morphology in this patch.",
+  "config": {"device": "cuda", "precision": "float16", "batch_size": 1, "max_new_tokens": 512}
+}

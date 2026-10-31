@@ -1,0 +1,11 @@
+{
+  "slide_id": "synthetic-slide",
+  "inputs": [{"path": "../../../../patches/synthetic-slide-20x.h5", "source_id": "grid-20x"}],
+  "output": "../../../../descriptions/synthetic-slide",
+  "models": [
+    {"model": "pathgen_llava", "checkpoint": "../../../../checkpoints/pathgen-llava", "python_executable": "../../../../.venv-pathgen/bin/python", "options": {"vision_checkpoint": "../../../../checkpoints/pathgen-clip", "conversation_mode": "llava_v1"}},
+    {"model": "quilt_llava_7b", "checkpoint": "../../../../checkpoints/quilt-llava", "python_executable": "../../../../.venv-quilt/bin/python"}
+  ],
+  "prompt": "Describe the visible microscopic morphology in this patch.",
+  "config": {"device": "cuda", "precision": "float16", "batch_size": 1, "max_new_tokens": 512}
+}

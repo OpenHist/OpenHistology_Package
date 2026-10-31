@@ -1,0 +1,37 @@
+Bootstrap: docker
+From: python:3.12-slim-bookworm
+
+%arguments
+    TORCH_INDEX_URL=https://pypi.org/simple
+
+# Build from the repository root; only the subpackages this container uses are copied.
+%files
+    pyproject.toml /opt/openhisto/pyproject.toml
+    README.md /opt/openhisto/README.md
+    src/openhisto/__init__.py /opt/openhisto/src/openhisto/__init__.py
+    src/openhisto/_common.py /opt/openhisto/src/openhisto/_common.py
+    src/openhisto/stain_transfer /opt/openhisto/src/openhisto/stain_transfer
+    src/openhisto/patch_extraction /opt/openhisto/src/openhisto/patch_extraction
+    scripts/smoke-stain-container.py /opt/openhisto/smoke-stain-container.py
+    LICENSE /opt/openhisto/LICENSE
+
+%post
+    apt-get update
+    apt-get install -y --no-install-recommends libgomp1
+    rm -rf /var/lib/apt/lists/*
+    python -m pip install --no-cache-dir --index-url {{ TORCH_INDEX_URL }} "torch>=2.6,<2.7"
+    python -m pip install --no-cache-dir "/opt/openhisto[stain-transfer-spams,stain-transfer-gan]"
+
+%environment
+    export PYTHONUNBUFFERED=1
+
+%runscript
+    exec python -m openhisto.stain_transfer "$@"
+
+%test
+    python -m openhisto.stain_transfer methods
+    python -c 'import torch, spams; from openhisto.stain_transfer import DomainSpec'
+    python /opt/openhisto/smoke-stain-container.py
+
+%labels
+    Description Unified classical and GAN stain transfer for RGB patches

@@ -1,0 +1,10 @@
+{
+  "method": "cyclegan",
+  "source": "domain-a",
+  "target": "domain-b",
+  "source_name": "lab-a",
+  "target_name": "lab-b",
+  "output": "training/cyclegan",
+  "device": "auto",
+  "lambda_mask": 0.0
+}

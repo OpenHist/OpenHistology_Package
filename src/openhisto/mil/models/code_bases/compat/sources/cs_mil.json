@@ -1,0 +1,20 @@
+{
+  "repository": "hrlblab/CS-MIL",
+  "url": "https://github.com/hrlblab/CS-MIL",
+  "branch": "main",
+  "commit": "d51b97f411caeff092e397427003021d1b23f00f",
+  "checkout": "upstream/cs_mil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "Emb_Clustering_Code/LICENSE",
+    "LICENSE",
+    "Toydataset_Code/cs-mil-toydataset/LICENSE"
+  ],
+  "source_files": 120,
+  "retrieved_at_utc": "2026-10-27T06:43:08.898730+00:00",
+  "excluded_files": {
+    "CS-MIL_Docker/src/models/swav.py": "Unused, incomplete upstream SwAV reference with an empty forward body; not imported by the supported CS-MIL adapter."
+  }
+}

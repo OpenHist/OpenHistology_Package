@@ -1,0 +1,15 @@
+{
+  "repository": "mahmoodlab/CLAM",
+  "url": "https://github.com/mahmoodlab/CLAM",
+  "branch": "master",
+  "commit": "53e2409d4a8189c682c173382964a85f114f923c",
+  "checkout": "upstream/clam",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "source_files": 40,
+  "retrieved_at_utc": "2026-10-27T06:43:05.299083+00:00"
+}

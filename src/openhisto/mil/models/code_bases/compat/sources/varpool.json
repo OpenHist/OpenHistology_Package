@@ -1,0 +1,13 @@
+{
+  "repository": "mahmoodlab/varpool",
+  "url": "https://github.com/mahmoodlab/varpool",
+  "branch": "main",
+  "commit": "2e40ab4d9a129e430fdb7dcf3304f55388f2ad88",
+  "checkout": "upstream/varpool",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 69,
+  "retrieved_at_utc": "2026-10-27T06:43:11.504001+00:00"
+}

@@ -1,0 +1,269 @@
+{
+  "verified_at_utc": "2026-10-29T01:55:24.337324+00:00",
+  "python": "3.12.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "tests_passed": 101,
+  "tests_skipped": 0,
+  "implementation_sha256": "b045d67e9dd504f361955588031612270ffaa9aa19ab9859e7f1d024ad5f8d2a",
+  "mil_implementation_sha256": "6b8f1de4834816d128b492be427c3d322dc78bc56945913cabade1fd0758d2fe",
+  "synthetic_only": true,
+  "clinical_records_used": false,
+  "dependencies": {
+    "torch": "2.6.0",
+    "numpy": "2.2.6",
+    "scikit-learn": "1.5.2",
+    "skops": "0.16.0",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10"
+  },
+  "neural_heads": {
+    "linear": {
+      "cpu_forward_backward": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "mlp": {
+      "cpu_forward_backward": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "bayesian_mlp": {
+      "cpu_forward_backward": "passed",
+      "artifact_roundtrip": "passed"
+    }
+  },
+  "classifiers": {
+    "logistic_regression": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "random_forest": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "extra_trees": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "hist_gradient_boosting": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "svm": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "knn": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "gaussian_nb": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "sklearn_mlp": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "xgboost": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "lightgbm": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "catboost": {
+      "cpu_binary_multiclass": "passed",
+      "artifact_roundtrip": "passed"
+    }
+  },
+  "survival_heads": {
+    "cox": {
+      "linear_mlp_gradients": "passed",
+      "loss_oracles": "passed",
+      "artifact_roundtrip": "passed"
+    },
+    "discrete_hazard": {
+      "linear_mlp_gradients": "passed",
+      "loss_oracles": "passed",
+      "artifact_roundtrip": "passed"
+    }
+  },
+  "mil_profiles": {
+    "abmil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "eb0434ba2795711a45d693d60120ae53532b1b93"
+    },
+    "gated_abmil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "eb0434ba2795711a45d693d60120ae53532b1b93"
+    },
+    "dsmil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "80465ed534ac49b5e550833da56c27936f0b9440"
+    },
+    "dtfd_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "10964f4dcc27c65ce110a0e9a3b9240bff58da8a"
+    },
+    "acmil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "e53d19c81f3892256d41962ffc4352cc91a4f834"
+    },
+    "asmil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "5d062271e1626b27a955c309d10add902311865c"
+    },
+    "clam_sb": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "53e2409d4a8189c682c173382964a85f114f923c"
+    },
+    "clam_mb": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "53e2409d4a8189c682c173382964a85f114f923c"
+    },
+    "varpool": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "2e40ab4d9a129e430fdb7dcf3304f55388f2ad88"
+    },
+    "panther": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "e7ffae402e146363fe1ca3813ffe68d248ec570f"
+    },
+    "wikg": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "eb3144fb8267f525c57e71ced5c5b2b6a1c42a93"
+    },
+    "tad_graph": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "696f2196adc38edfd18468869f7a5a5b0a0d3abb"
+    },
+    "resgat": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "65e2833c6207b7d13de2baf649a6eeece63ce71c"
+    },
+    "patch_gcn": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "823addaee5b8f4cc2bec3ea8e5e0077b2a5115a4"
+    },
+    "slidegraph_plus": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "23fbf58371a86525ea2daf0eb0232b379b1b8831"
+    },
+    "cs_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "d51b97f411caeff092e397427003021d1b23f00f"
+    },
+    "zoommil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "da7bb7fa71629d34e9b04859c1db791ac8330f5d"
+    },
+    "hag_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "9fec1ca4390346b958212801d2d5a14c7ce36d6f"
+    },
+    "gfr_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "25c9b1e24a8544619b5d4405c9fa70eba9c5cd0f"
+    },
+    "h2_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "ea472fefd5eab553c58041a5acc203ac7d467d06"
+    },
+    "hipt": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "780fafaed2e5b112bc1ed6e78852af1fe6714342"
+    },
+    "transmil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "9d6aee57c7c72375fb9132dc58cd8c9b0f0a949c"
+    },
+    "ilra": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "bb45b9ba9d4a7096d473f9ee171a6252eb736570"
+    },
+    "rrt_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "3320b6616b2c3d96ddc5bcd1aecea865a064987f"
+    },
+    "dgr_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "ac6257ffa768f154c52ac8b01e2086e5d3a714bf"
+    },
+    "caprmil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "b1f21a25e21d889a90bd604d29887abb3c1dbeeb"
+    },
+    "lin_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "82a00672cfebd7a6cedbd5384b47700a4db5da27"
+    },
+    "mamba_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "9aea39efc13fdcd3703b5b54c28a64887b4acbd7"
+    },
+    "nnmil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "e92e8a0cf72dc1beb2a5915e27ca128af45fcb40"
+    },
+    "mhim_v1": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "5377eb6014bbd24eda1185628b864e8ef3622a08"
+    },
+    "mhim_v2": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": "9d0c91abeb1b39f91c161b47cf14bc44f5a89da3"
+    },
+    "mean_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": null
+    },
+    "max_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": null
+    },
+    "mean_std_mil": {
+      "representation_gradients_freeze_reload": "passed",
+      "cox_and_discrete_head_gradients": "passed",
+      "source_commit": null
+    }
+  },
+  "limits": [
+    "No real-cohort accuracy/clinical validation",
+    "No GPU validation",
+    "Small synthetic configurations, not every upstream ablation"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "repository": "ChongQingNoSubway/DGR-MIL",
+  "url": "https://github.com/ChongQingNoSubway/DGR-MIL",
+  "branch": "main",
+  "commit": "ac6257ffa768f154c52ac8b01e2086e5d3a714bf",
+  "checkout": "upstream/dgr_mil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "LICENSE"
+  ],
+  "source_files": 53,
+  "retrieved_at_utc": "2026-10-27T06:43:15.204378+00:00"
+}

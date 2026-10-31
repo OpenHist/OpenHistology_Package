@@ -1,0 +1,906 @@
+{
+  "schema_version": 1,
+  "profile_count": 34,
+  "unique_repositories": 28,
+  "source_working_trees": 29,
+  "sources": {
+    "acmil": {
+      "repository": "dazhangyu123/ACMIL",
+      "url": "https://github.com/dazhangyu123/ACMIL",
+      "branch": "main",
+      "commit": "e53d19c81f3892256d41962ffc4352cc91a4f834",
+      "checkout": "upstream/acmil",
+      "retrieved_at_utc": "2026-10-27T06:45:42.774488+00:00",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 85
+    },
+    "asmil": {
+      "repository": "Linfeng-Ye/ASMIL",
+      "url": "https://github.com/Linfeng-Ye/ASMIL",
+      "branch": "main",
+      "commit": "5d062271e1626b27a955c309d10add902311865c",
+      "checkout": "upstream/asmil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 83,
+      "retrieved_at_utc": "2026-10-27T06:43:04.826231+00:00"
+    },
+    "attention_deep_mil": {
+      "repository": "AMLab-Amsterdam/AttentionDeepMIL",
+      "url": "https://github.com/AMLab-Amsterdam/AttentionDeepMIL",
+      "branch": "master",
+      "commit": "eb0434ba2795711a45d693d60120ae53532b1b93",
+      "checkout": "upstream/attention_deep_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 7,
+      "retrieved_at_utc": "2026-10-27T06:43:03.105245+00:00"
+    },
+    "caprmil": {
+      "repository": "mandlos/CAPRMIL",
+      "url": "https://github.com/mandlos/CAPRMIL",
+      "branch": "master",
+      "commit": "b1f21a25e21d889a90bd604d29887abb3c1dbeeb",
+      "checkout": "upstream/caprmil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE.txt"
+      ],
+      "source_files": 99,
+      "retrieved_at_utc": "2026-10-27T06:43:15.071851+00:00"
+    },
+    "clam": {
+      "repository": "mahmoodlab/CLAM",
+      "url": "https://github.com/mahmoodlab/CLAM",
+      "branch": "master",
+      "commit": "53e2409d4a8189c682c173382964a85f114f923c",
+      "checkout": "upstream/clam",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "source_files": 40,
+      "retrieved_at_utc": "2026-10-27T06:43:05.299083+00:00"
+    },
+    "cs_mil": {
+      "repository": "hrlblab/CS-MIL",
+      "url": "https://github.com/hrlblab/CS-MIL",
+      "branch": "main",
+      "commit": "d51b97f411caeff092e397427003021d1b23f00f",
+      "checkout": "upstream/cs_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "Emb_Clustering_Code/LICENSE",
+        "LICENSE",
+        "Toydataset_Code/cs-mil-toydataset/LICENSE"
+      ],
+      "source_files": 120,
+      "retrieved_at_utc": "2026-10-27T06:43:08.898730+00:00",
+      "excluded_files": {
+        "CS-MIL_Docker/src/models/swav.py": "Unused, incomplete upstream SwAV reference with an empty forward body; not imported by the supported CS-MIL adapter."
+      }
+    },
+    "dgr_mil": {
+      "repository": "ChongQingNoSubway/DGR-MIL",
+      "url": "https://github.com/ChongQingNoSubway/DGR-MIL",
+      "branch": "main",
+      "commit": "ac6257ffa768f154c52ac8b01e2086e5d3a714bf",
+      "checkout": "upstream/dgr_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 53,
+      "retrieved_at_utc": "2026-10-27T06:43:15.204378+00:00"
+    },
+    "dsmil": {
+      "repository": "binli123/dsmil-wsi",
+      "url": "https://github.com/binli123/dsmil-wsi",
+      "branch": "master",
+      "commit": "80465ed534ac49b5e550833da56c27936f0b9440",
+      "checkout": "upstream/dsmil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 22,
+      "retrieved_at_utc": "2026-10-27T06:43:04.969998+00:00"
+    },
+    "dtfd_mil": {
+      "repository": "hrzhang1123/DTFD-MIL",
+      "url": "https://github.com/hrzhang1123/DTFD-MIL",
+      "branch": "main",
+      "commit": "10964f4dcc27c65ce110a0e9a3b9240bff58da8a",
+      "checkout": "upstream/dtfd_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 12,
+      "retrieved_at_utc": "2026-10-27T06:43:03.420901+00:00"
+    },
+    "gfr_mil": {
+      "repository": "longger-z/GFR-MIL",
+      "url": "https://github.com/longger-z/GFR-MIL",
+      "branch": "main",
+      "commit": "25c9b1e24a8544619b5d4405c9fa70eba9c5cd0f",
+      "checkout": "upstream/gfr_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 20,
+      "retrieved_at_utc": "2026-10-27T06:43:09.671133+00:00"
+    },
+    "h2_mil": {
+      "repository": "lin-lcx/H2-MIL",
+      "url": "https://github.com/lin-lcx/H2-MIL",
+      "branch": "main",
+      "commit": "ea472fefd5eab553c58041a5acc203ac7d467d06",
+      "checkout": "upstream/h2_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 4,
+      "retrieved_at_utc": "2026-10-27T06:43:10.062379+00:00"
+    },
+    "hag_mil": {
+      "repository": "BearCleverProud/HAG-MIL",
+      "url": "https://github.com/BearCleverProud/HAG-MIL",
+      "branch": "master",
+      "commit": "9fec1ca4390346b958212801d2d5a14c7ce36d6f",
+      "checkout": "upstream/hag_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 15,
+      "retrieved_at_utc": "2026-10-27T06:43:09.487468+00:00"
+    },
+    "hipt": {
+      "repository": "mahmoodlab/HIPT",
+      "url": "https://github.com/mahmoodlab/HIPT",
+      "branch": "master",
+      "commit": "780fafaed2e5b112bc1ed6e78852af1fe6714342",
+      "checkout": "upstream/hipt",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 52,
+      "retrieved_at_utc": "2026-10-27T06:43:12.626007+00:00"
+    },
+    "ilra": {
+      "repository": "jinxixiang/low_rank_wsi",
+      "url": "https://github.com/jinxixiang/low_rank_wsi",
+      "branch": "main",
+      "commit": "bb45b9ba9d4a7096d473f9ee171a6252eb736570",
+      "checkout": "upstream/ilra",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 24,
+      "retrieved_at_utc": "2026-10-27T06:43:13.111301+00:00"
+    },
+    "lin_mil": {
+      "repository": "charlotterchtr/Lin-MIL",
+      "url": "https://github.com/charlotterchtr/Lin-MIL",
+      "branch": "main",
+      "commit": "82a00672cfebd7a6cedbd5384b47700a4db5da27",
+      "checkout": "upstream/lin_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 13,
+      "retrieved_at_utc": "2026-10-27T06:43:14.634731+00:00"
+    },
+    "mamba_mil": {
+      "repository": "isyangshu/MambaMIL",
+      "url": "https://github.com/isyangshu/MambaMIL",
+      "branch": "main",
+      "commit": "9aea39efc13fdcd3703b5b54c28a64887b4acbd7",
+      "checkout": "upstream/mamba_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "mamba/LICENSE"
+      ],
+      "source_files": 62,
+      "retrieved_at_utc": "2026-10-27T06:43:15.811398+00:00"
+    },
+    "mhim_mil": {
+      "repository": "DearCaat/MHIM-MIL",
+      "url": "https://github.com/DearCaat/MHIM-MIL",
+      "branch": "master",
+      "commit": "9d0c91abeb1b39f91c161b47cf14bc44f5a89da3",
+      "checkout": "upstream/mhim_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "CLAM/LICENSE.md"
+      ],
+      "source_files": 112,
+      "retrieved_at_utc": "2026-10-27T06:43:18.215172+00:00"
+    },
+    "mhim_mil_v1": {
+      "repository": "DearCaat/MHIM-MIL",
+      "url": "https://github.com/DearCaat/MHIM-MIL",
+      "branch": "v1",
+      "commit": "5377eb6014bbd24eda1185628b864e8ef3622a08",
+      "checkout": "upstream/mhim_mil_v1",
+      "retrieved_at_utc": "2026-10-27T06:45:44.507843+00:00",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "DTFD/LICENSE"
+      ],
+      "source_files": 38
+    },
+    "nnmil": {
+      "repository": "Luoxd1996/nnMIL",
+      "url": "https://github.com/Luoxd1996/nnMIL",
+      "branch": "main",
+      "commit": "e92e8a0cf72dc1beb2a5915e27ca128af45fcb40",
+      "checkout": "upstream/nnmil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 67,
+      "retrieved_at_utc": "2026-10-27T06:43:16.310021+00:00"
+    },
+    "panther": {
+      "repository": "mahmoodlab/PANTHER",
+      "url": "https://github.com/mahmoodlab/PANTHER",
+      "branch": "main",
+      "commit": "e7ffae402e146363fe1ca3813ffe68d248ec570f",
+      "checkout": "upstream/panther",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "source_files": 80,
+      "retrieved_at_utc": "2026-10-27T06:43:11.673576+00:00"
+    },
+    "patch_gcn": {
+      "repository": "mahmoodlab/Patch-GCN",
+      "url": "https://github.com/mahmoodlab/Patch-GCN",
+      "branch": "master",
+      "commit": "823addaee5b8f4cc2bec3ea8e5e0077b2a5115a4",
+      "checkout": "upstream/patch_gcn",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 15,
+      "retrieved_at_utc": "2026-10-27T06:43:06.980247+00:00"
+    },
+    "resgat": {
+      "repository": "maiziezhoulab/ResGAT",
+      "url": "https://github.com/maiziezhoulab/ResGAT",
+      "branch": "main",
+      "commit": "65e2833c6207b7d13de2baf649a6eeece63ce71c",
+      "checkout": "upstream/resgat",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 21,
+      "retrieved_at_utc": "2026-10-27T06:43:06.972241+00:00"
+    },
+    "rrt_mil": {
+      "repository": "DearCaat/RRT-MIL",
+      "url": "https://github.com/DearCaat/RRT-MIL",
+      "branch": "master",
+      "commit": "3320b6616b2c3d96ddc5bcd1aecea865a064987f",
+      "checkout": "upstream/rrt_mil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "DTFD/LICENSE"
+      ],
+      "source_files": 73,
+      "retrieved_at_utc": "2026-10-27T06:43:13.925972+00:00"
+    },
+    "slidegraph": {
+      "repository": "wenqi006/SlideGraph",
+      "url": "https://github.com/wenqi006/SlideGraph",
+      "branch": "main",
+      "commit": "23fbf58371a86525ea2daf0eb0232b379b1b8831",
+      "checkout": "upstream/slidegraph",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "source_files": 8,
+      "retrieved_at_utc": "2026-10-27T06:43:07.412316+00:00"
+    },
+    "tad_graph": {
+      "repository": "HKU-MedAI/TAD-Graph",
+      "url": "https://github.com/HKU-MedAI/TAD-Graph",
+      "branch": "main",
+      "commit": "696f2196adc38edfd18468869f7a5a5b0a0d3abb",
+      "checkout": "upstream/tad_graph",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 54,
+      "retrieved_at_utc": "2026-10-27T06:43:07.771413+00:00"
+    },
+    "transmil": {
+      "repository": "szc19990412/TransMIL",
+      "url": "https://github.com/szc19990412/TransMIL",
+      "branch": "main",
+      "commit": "9d6aee57c7c72375fb9132dc58cd8c9b0f0a949c",
+      "checkout": "upstream/transmil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 33,
+      "retrieved_at_utc": "2026-10-27T06:43:12.684068+00:00"
+    },
+    "varpool": {
+      "repository": "mahmoodlab/varpool",
+      "url": "https://github.com/mahmoodlab/varpool",
+      "branch": "main",
+      "commit": "2e40ab4d9a129e430fdb7dcf3304f55388f2ad88",
+      "checkout": "upstream/varpool",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 69,
+      "retrieved_at_utc": "2026-10-27T06:43:11.504001+00:00"
+    },
+    "wikg": {
+      "repository": "WonderLandxD/WiKG",
+      "url": "https://github.com/WonderLandxD/WiKG",
+      "branch": "main",
+      "commit": "eb3144fb8267f525c57e71ced5c5b2b6a1c42a93",
+      "checkout": "upstream/wikg",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [],
+      "source_files": 4,
+      "retrieved_at_utc": "2026-10-27T06:43:05.025939+00:00"
+    },
+    "zoommil": {
+      "repository": "histocartography/zoommil",
+      "url": "https://github.com/histocartography/zoommil",
+      "branch": "main",
+      "commit": "da7bb7fa71629d34e9b04859c1db791ac8330f5d",
+      "checkout": "upstream/zoommil",
+      "code_only": true,
+      "lfs_downloaded": false,
+      "datasets_downloaded": false,
+      "license_files": [
+        "LICENSE"
+      ],
+      "source_files": 17,
+      "retrieved_at_utc": "2026-10-27T06:43:08.706369+00:00"
+    }
+  },
+  "profiles": [
+    {
+      "name": "abmil",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/attention_deep_mil"
+    },
+    {
+      "name": "gated_abmil",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/attention_deep_mil"
+    },
+    {
+      "name": "dsmil",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/dsmil"
+    },
+    {
+      "name": "dtfd_mil",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/dtfd_mil"
+    },
+    {
+      "name": "acmil",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/acmil"
+    },
+    {
+      "name": "asmil",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/asmil"
+    },
+    {
+      "name": "clam_sb",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/clam"
+    },
+    {
+      "name": "clam_mb",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/clam"
+    },
+    {
+      "name": "varpool",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/varpool"
+    },
+    {
+      "name": "panther",
+      "family": "attention",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.attention.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "representation",
+        "classification_with_adapter_head"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-attention.txt"
+      ],
+      "source_checkout": "upstream/panther"
+    },
+    {
+      "name": "wikg",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/wikg"
+    },
+    {
+      "name": "tad_graph",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_graph",
+      "tasks": [
+        "classification",
+        "discrete_survival"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/tad_graph"
+    },
+    {
+      "name": "resgat",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_graph",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/resgat"
+    },
+    {
+      "name": "patch_gcn",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_graph",
+      "tasks": [
+        "discrete_survival"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/patch_gcn"
+    },
+    {
+      "name": "slidegraph_plus",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_graph",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/slidegraph"
+    },
+    {
+      "name": "cs_mil",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_hierarchy",
+      "tasks": [
+        "independent_sigmoid"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/cs_mil"
+    },
+    {
+      "name": "zoommil",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_hierarchy",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/zoommil"
+    },
+    {
+      "name": "hag_mil",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_hierarchy",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/hag_mil"
+    },
+    {
+      "name": "gfr_mil",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_hierarchy",
+      "tasks": [
+        "classification",
+        "discrete_survival"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/gfr_mil"
+    },
+    {
+      "name": "h2_mil",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_graph",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/h2_mil"
+    },
+    {
+      "name": "hipt",
+      "family": "graph_multiscale",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.graph_multiscale.build",
+      "input_kind": "prepared_hierarchy",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-graph_multiscale.txt"
+      ],
+      "source_checkout": "upstream/hipt"
+    },
+    {
+      "name": "transmil",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/transmil"
+    },
+    {
+      "name": "ilra",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/ilra"
+    },
+    {
+      "name": "rrt_mil",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/rrt_mil"
+    },
+    {
+      "name": "dgr_mil",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/dgr_mil"
+    },
+    {
+      "name": "caprmil",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/caprmil"
+    },
+    {
+      "name": "lin_mil",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/lin_mil"
+    },
+    {
+      "name": "mamba_mil",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/mamba_mil"
+    },
+    {
+      "name": "nnmil",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/nnmil"
+    },
+    {
+      "name": "mhim_v1",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/mhim_mil_v1"
+    },
+    {
+      "name": "mhim_v2",
+      "family": "transformers",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.transformers.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt",
+        "requirements-transformers.txt"
+      ],
+      "source_checkout": "upstream/mhim_mil"
+    },
+    {
+      "name": "mean_mil",
+      "family": "baselines",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.baselines.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt"
+      ],
+      "source_checkout": null
+    },
+    {
+      "name": "max_mil",
+      "family": "baselines",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.baselines.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt"
+      ],
+      "source_checkout": null
+    },
+    {
+      "name": "mean_std_mil",
+      "family": "baselines",
+      "entrypoint": "openhisto.mil.models.code_bases.adapters.baselines.build",
+      "input_kind": "feature_bag",
+      "tasks": [
+        "classification"
+      ],
+      "dependencies": [
+        "requirements-core.txt"
+      ],
+      "source_checkout": null
+    }
+  ]
+}

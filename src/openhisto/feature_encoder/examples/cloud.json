@@ -1,0 +1,12 @@
+{
+  "slide_id": "synthetic-slide",
+  "inputs": [
+    {"path": "../../../../patches/synthetic-slide-20x.h5", "source_id": "grid-20x"}
+  ],
+  "output": "../../../../features/synthetic-slide.h5ad",
+  "models": [
+    {"model": "gemini_embedding_2", "dimension": 3072, "options": {"cache_tag": "initial"}}
+  ],
+  "config": {"batch_size": 32, "cloud_concurrency": 4, "max_retries": 3},
+  "auth": {"gemini_api_key_env": "GEMINI_API_KEY", "prompt_credentials": false}
+}

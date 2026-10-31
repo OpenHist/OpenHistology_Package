@@ -1,0 +1,6 @@
+{
+  "input": "patches/slide.h5",
+  "output": "normalized/slide.h5",
+  "domain": {"method": "vahadane", "references": ["reference.png"]},
+  "config": {"seed": 256, "standardize": false}
+}

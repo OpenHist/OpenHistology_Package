@@ -1,0 +1,13 @@
+{
+  "repository": "WonderLandxD/WiKG",
+  "url": "https://github.com/WonderLandxD/WiKG",
+  "branch": "main",
+  "commit": "eb3144fb8267f525c57e71ced5c5b2b6a1c42a93",
+  "checkout": "upstream/wikg",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 4,
+  "retrieved_at_utc": "2026-10-27T06:43:05.025939+00:00"
+}

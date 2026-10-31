@@ -1,0 +1,10 @@
+# Separate Linux/CUDA Python 3.10 environment; native Quilt LLaVA fork.
+numpy<2
+Pillow>=9.5
+torch==2.0.1
+torchvision==0.15.2
+transformers==4.31.0
+tokenizers>=0.12.1,<0.14
+accelerate==0.21.0
+peft==0.4.0
+llava @ git+https://github.com/aldraus/quilt-llava.git@7e70fc39f792ac55de010eb37bff0a6d6f491c13

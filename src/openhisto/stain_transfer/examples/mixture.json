@@ -1,0 +1,11 @@
+{
+  "input": "patches",
+  "output": "normalized",
+  "domain": {
+    "candidates": [
+      {"method": "reinhard", "references": ["reference-a.png"]},
+      {"method": "histogram", "references": ["reference-b.png"]}
+    ]
+  },
+  "config": {"mix": true, "seed": 256}
+}

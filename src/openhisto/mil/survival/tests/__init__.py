@@ -1,0 +1,1 @@
+"""Synthetic survival-head tests."""

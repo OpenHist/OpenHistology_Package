@@ -1,0 +1,13 @@
+{
+  "repository": "maiziezhoulab/ResGAT",
+  "url": "https://github.com/maiziezhoulab/ResGAT",
+  "branch": "main",
+  "commit": "65e2833c6207b7d13de2baf649a6eeece63ce71c",
+  "checkout": "upstream/resgat",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 21,
+  "retrieved_at_utc": "2026-10-27T06:43:06.972241+00:00"
+}

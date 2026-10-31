@@ -1,0 +1,12 @@
+{
+  "family": "attention_clam_statistical",
+  "upstream_sources_mutated": false,
+  "repairs": [
+    {"repo": "attention_deep_mil", "kind": "feature_frontend_adaptation", "detail": "Bypass the native grayscale CNN. Preserve native 500-dimensional attention and classifier. Identity when D=500, otherwise explicit learned D-to-500 ReLU projection. Binary two-class logits [0,s] preserve native sigmoid semantics; larger heads are marked adapted."},
+    {"repo": "asmil", "file": "architecture/mytransformer.py", "kind": "unused_import", "detail": "Remove only unused modules.emb_position wildcard import: the upstream tree lacks modules and none of the imported positional symbols is referenced. Actual ACMIL_MYMHA/EMA remain native; unused broken ACMIL_MHA is not selected."},
+    {"repo": "asmil", "kind": "explicit_training_helper", "detail": "Expose update_anchor for matching finite states, avoiding the upstream training-script guard that updates only NaN states. No automatic EMA update is performed during forward."},
+    {"repo": "dtfd_mil", "kind": "native_component_coordinator", "detail": "Coordinate native DimReduction, Attention_Gated, Classifier_1fc and Attention_with_Classifier with AFS/MaxS/MaxMinS distillation. Preserve pseudo-bag logits and grouping indices. Evaluation uses an explicitly recorded deterministic partition seed."},
+    {"repo": "panther", "file": "src/mil_models/__init__.py", "kind": "lazy_import", "detail": "Omit eager imports of unrelated supervised/survival models; import unchanged PANTHERBase and native EM implementation directly."},
+    {"repo": "panther", "kind": "explicit_classifier_head", "detail": "Require a finite numeric .npy prototype matrix and preserve native representation/assignments. Add a separately identified linear downstream classifier; never fit prototypes implicitly from evaluation bags."}
+  ]
+}

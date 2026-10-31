@@ -1,0 +1,13 @@
+{
+  "repository": "longger-z/GFR-MIL",
+  "url": "https://github.com/longger-z/GFR-MIL",
+  "branch": "main",
+  "commit": "25c9b1e24a8544619b5d4405c9fa70eba9c5cd0f",
+  "checkout": "upstream/gfr_mil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 20,
+  "retrieved_at_utc": "2026-10-27T06:43:09.671133+00:00"
+}

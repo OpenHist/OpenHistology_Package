@@ -1,0 +1,38 @@
+name: Feature request
+description: Propose a workflow improvement, API extension or model adapter.
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us about the research workflow you want to support. Proposals can start small;
+        distinguish desired behavior from functionality already available in OpenHisto.
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow and current limitation
+      description: What are you trying to do, and where does the current API fall short?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the input/output contract and an example API or command if useful.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Existing options or alternatives
+      description: Explain any current workaround and how the proposal improves it.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Model/backend sources, if applicable
+      description: Link the official implementation/model card and note source revisions, dependencies, access and license requirements. Do not include credentials or restricted artifacts.
+  - type: textarea
+    id: validation
+    attributes:
+      label: Suggested validation
+      description: What small synthetic example or independent oracle would demonstrate the behavior? Note any separate real-model validation needs.

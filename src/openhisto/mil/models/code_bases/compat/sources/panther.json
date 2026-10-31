@@ -1,0 +1,15 @@
+{
+  "repository": "mahmoodlab/PANTHER",
+  "url": "https://github.com/mahmoodlab/PANTHER",
+  "branch": "main",
+  "commit": "e7ffae402e146363fe1ca3813ffe68d248ec570f",
+  "checkout": "upstream/panther",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "source_files": 80,
+  "retrieved_at_utc": "2026-10-27T06:43:11.673576+00:00"
+}

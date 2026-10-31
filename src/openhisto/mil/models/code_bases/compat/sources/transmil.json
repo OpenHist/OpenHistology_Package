@@ -1,0 +1,13 @@
+{
+  "repository": "szc19990412/TransMIL",
+  "url": "https://github.com/szc19990412/TransMIL",
+  "branch": "main",
+  "commit": "9d6aee57c7c72375fb9132dc58cd8c9b0f0a949c",
+  "checkout": "upstream/transmil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 33,
+  "retrieved_at_utc": "2026-10-27T06:43:12.684068+00:00"
+}

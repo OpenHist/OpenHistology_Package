@@ -1,0 +1,15 @@
+{
+  "repository": "mahmoodlab/Patch-GCN",
+  "url": "https://github.com/mahmoodlab/Patch-GCN",
+  "branch": "master",
+  "commit": "823addaee5b8f4cc2bec3ea8e5e0077b2a5115a4",
+  "checkout": "upstream/patch_gcn",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [
+    "LICENSE"
+  ],
+  "source_files": 15,
+  "retrieved_at_utc": "2026-10-27T06:43:06.980247+00:00"
+}

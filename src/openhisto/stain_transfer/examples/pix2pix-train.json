@@ -1,0 +1,9 @@
+{
+  "method": "pix2pix",
+  "source": "paired/source",
+  "target": "paired/target",
+  "source_name": "source",
+  "target_name": "destination",
+  "output": "training/pix2pix",
+  "device": "auto"
+}

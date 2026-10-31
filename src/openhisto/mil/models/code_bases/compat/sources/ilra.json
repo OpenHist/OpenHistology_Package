@@ -1,0 +1,13 @@
+{
+  "repository": "jinxixiang/low_rank_wsi",
+  "url": "https://github.com/jinxixiang/low_rank_wsi",
+  "branch": "main",
+  "commit": "bb45b9ba9d4a7096d473f9ee171a6252eb736570",
+  "checkout": "upstream/ilra",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 24,
+  "retrieved_at_utc": "2026-10-27T06:43:13.111301+00:00"
+}

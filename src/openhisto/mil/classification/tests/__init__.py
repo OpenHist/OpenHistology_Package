@@ -1,0 +1,1 @@
+"""Synthetic classification head tests."""

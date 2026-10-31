@@ -1,0 +1,13 @@
+{
+  "repository": "Linfeng-Ye/ASMIL",
+  "url": "https://github.com/Linfeng-Ye/ASMIL",
+  "branch": "main",
+  "commit": "5d062271e1626b27a955c309d10add902311865c",
+  "checkout": "upstream/asmil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 83,
+  "retrieved_at_utc": "2026-10-27T06:43:04.826231+00:00"
+}

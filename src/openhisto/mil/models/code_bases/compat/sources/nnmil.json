@@ -1,0 +1,13 @@
+{
+  "repository": "Luoxd1996/nnMIL",
+  "url": "https://github.com/Luoxd1996/nnMIL",
+  "branch": "main",
+  "commit": "e92e8a0cf72dc1beb2a5915e27ca128af45fcb40",
+  "checkout": "upstream/nnmil",
+  "code_only": true,
+  "lfs_downloaded": false,
+  "datasets_downloaded": false,
+  "license_files": [],
+  "source_files": 67,
+  "retrieved_at_utc": "2026-10-27T06:43:16.310021+00:00"
+}
