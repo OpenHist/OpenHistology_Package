@@ -1,5 +1,7 @@
 # OpenHisto
 
+**Created and maintained by Abteen Arab.**
+
 We develop OpenHisto for computational pathology workflows, from whole-slide
 images to slide-level classification and risk/survival models. Our modules cover
 dataset acquisition, patch extraction, stain transfer, feature encoding,

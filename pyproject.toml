@@ -17,6 +17,7 @@ classifiers = [
 ]
 readme = "README.md"
 authors = [{name = "Abteen Arab"}]
+maintainers = [{name = "Abteen Arab"}]
 license = "MIT"
 license-files = [
     "LICENSE",
