@@ -100,23 +100,6 @@ requirements. Selected inference/preparation may download weights. Some models
 need approval, and cloud encoders send patches to a provider and can incur
 charges. Public checkpoint access does not replace its model-specific terms.
 
-## Tests and contributions
-
-We welcome focused fixes, new adapters, documentation improvements and
-reproducible bug reports. Start with [CONTRIBUTING.md](CONTRIBUTING.md) for
-environment setup, relevant checks and source/provenance conventions.
-
-Our functional tests use generated inputs and mocks rather than patient data or
-real pretrained checkpoints. Install the relevant module extras, then run its
-suite from the repository root, for example:
-
-```bash
-python -m unittest discover -s src/openhisto/patch_extraction/tests -t src -v
-```
-
-The MIL guides link synthetic CPU coverage reports. Those records establish
-the tested functional paths, not real-cohort accuracy or GPU parity.
-
 ## License and attribution
 
 We distribute our original code under the [MIT License](LICENSE), copyright
